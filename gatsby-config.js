@@ -11,6 +11,13 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
+      resolve: "gatsby-theme-gallery",
+      options: {
+        basePath: `/artwork`,
+      },
+      // __key: "images",
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
